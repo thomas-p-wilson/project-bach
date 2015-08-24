@@ -64,7 +64,8 @@ int main()
   write_word( f, file_length - 8, 4 ); 
 }
 
-void note(ofstream& f, double frequency, double seconds) {
+void note(ofstream& f, double frequency, double seconds)
+{
   int N = sample_rate * seconds;  // total number of samples
   for (int n = 0; n < N; n++)
   {
